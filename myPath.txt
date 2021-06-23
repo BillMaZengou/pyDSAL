@@ -1,0 +1,6 @@
+import sys
+sys.path.insert(1, "/Users/billma/Desktop/Learning/Algorithm/pyDSAL/pyDS")
+
+In Python File use
+import sys
+sys.path.insert(1, "YourPath/pyDSAL/pyDS")
