@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(1, "/Users/billma/Desktop/Learning/Algorithm/pyDSAL/pyDS")
+sys.path.insert(1, "YourPath/pyDSAL/pyDS")
 from queue import Queue
 import random
 
