@@ -48,7 +48,7 @@ def printer_simulation(num_seconds, pages_per_minute):
     waiting_times = []
 
     for current_second in range(num_seconds):
-        if new_print_task():
+        if random.randrange(1, 181) == 180:
             task = Task(current_second)
             print_queue.enqueue(task)
 
@@ -61,10 +61,6 @@ def printer_simulation(num_seconds, pages_per_minute):
 
     average_wait = sum(waiting_times) / len(waiting_times)
     print("Average Wait %6.2f secs %3d tasks remaining." % (average_wait, print_queue.size()))
-
-def new_print_task():
-    num = random.randrange(1, 181)
-    return num == 180
 
 def main():
     for i in range(10):
